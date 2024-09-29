@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*SEÇÃO DO CABEÇALHO DA PÁGINA*/
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    transition: 1s;
+}
+
+.cabecalho.scrolled{
+    background-color: #f5e9da;
+    z-index: 1;
+}
+
+.logo{
+    width: 150px;
+    margin-left: 15vw;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    margin-right: 15vw;
+}
+
+.menu ul li{
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #1D1D1D;
+    font-size: 1.3rem;
+    transition: 0.6s;
+}
+
+.btn-contato{
+    background-color: #FC840D;
+    font-size: 1.3rem;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-contato i{
+    margin-right: 5px;
+}
+
+.btn-contato:hover{
+    background-color: #FC8F23;
+    scale: 1.1;
+}
+    
+.menu ul li a:hover{
+    color: #FC840D;
+    border-bottom: 4px solid #FC840D;
+}
+
+.hamburguer{
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-top: 3px solid #1D1D1D;
+    margin-right: 10vw;
+}
+
+.hamburguer::before,
+.hamburguer::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #1D1D1D;
+    margin-top: 5px;
+}
+
+/*SEÇÃO DO BANNER DA PÁGINA*/
+.banner{
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.3);
+    background-image: url(img/BannerTest2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+}
+
+/*SEÇÃO SOBRE*/
+.secao-sobre{
+    width: 100%;
+    height: auto;
+    background-color: #f5e9da;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.texto-sobre{
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.texto-sobre p{
+    text-align: justify;
+}
+
+.secao-sobre img{
+    width: 550px;
+    margin-right: 10vw;
+    animation-name: animacao-componentes;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/*SEÇÃO SERVIÇOS*/
+.secao-servicos{
+    width: 100%;
+    height: auto;
+    background-color: #FC840D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.componentes-servicos{
+    width: 800px;
+    animation-name: animacao-componentes;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.texto-servicos h4{
+    padding-top: 20px;
+}
+
+.lista-servicos li{
+    padding-top: 5px;
+}
+
+@keyframes animacao-componentes{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+/* CONFIGURAR DEPOIS COM JAVASCRIPT PARA APARECER OS ITENS CONFORME SCROLLAR O MOUSE
+@keyframes animacao-surgindo{
+    from{
+        transform: translateX(-70%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+*/    
+
+
+
+/*SEÇÃO FORMULÁRIO DE CONTATO*/
+.formulario{
+    display: flex;
+    justify-content: center;
+    padding-block: 100px;
+    color: #1D1D1D;
+    text-align: center;
+    background-color: #f5e9da;
+}
+
+.formulario h4{
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.formulario-contato{
+    background-color: #FC8F23;
+    width: 60%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.form-group label{
+    text-align: left;
+}
+
+.form-group{
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.form-group input, textarea{
+    padding: 5px;
+    outline: 0;
+    resize: none;
+}
+
+.form-group button{
+    border: 0;
+    border-radius: 10px;
+    width: 50%;
+    height: 40px;
+    margin: 20px auto;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.form-group button:hover{
+    background-color: #f5e9da;
+}

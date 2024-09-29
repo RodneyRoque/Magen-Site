@@ -1,0 +1,121 @@
+@media screen and (max-width: 1280px){
+    .secao-sobre img{
+        width: 450px;
+        margin-right: 2vw;
+    }
+
+    .texto-sobre{
+        width: 40%;
+        font-size: 16px;
+    }
+
+    .secao-servicos{
+        font-size: 13px;
+    }
+
+    .componentes-servicos{
+        width: 600px;
+    }
+
+    .texto-servicos{
+        width: 100%;
+        padding-block: 25px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .logo{
+        width: 120px;
+        margin-left: 8vw;
+    }
+
+    .hamburguer{
+        display: block;
+        z-index: 1;
+    }
+
+    .menu-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #f5e9da;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        pointer-events: none;
+    }
+
+    .btn-contato{
+        width: 350px;
+    }
+
+    .menu.active .menu-list{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .menu.active .hamburguer{
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .menu.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    .menu.active .hamburguer::after{
+        transform: rotate(-135deg);
+    }
+
+    .secao-sobre{
+        padding-top: 50px;
+    }
+
+    .texto-sobre{
+        width: 80%;
+    }
+
+    .componentes-servicos{
+        width: 450px;
+    }
+
+    .secao-servicos{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .texto-servicos ul li{
+        text-align: left;
+    }
+    
+}
+
+@media screen and (max-width:430px){
+    .texto-sobre{
+        font-size: 15px;
+    }
+
+    .texto-sobre h2{
+        font-size: 20px;
+    }
+
+    .secao-sobre img{
+        width: 300px;
+    }
+
+    .secao-servicos{
+        font-size: 12px;
+    }
+
+    .componentes-servicos{
+        width: 90%;
+    }
+}

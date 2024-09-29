@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magen - Marketing Especializado</title>
+    <link rel="shortcut icon" type="imagex/png" href="img/Logo-Principal-Laranja.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="responsive.css" type="text/css"> 
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="img/Logo-Principal-Laranja.png" alt="Logomarca da empresa" class="logo">
+        <nav class="menu">
+            <button class="hamburguer"></button>
+                <ul class="menu-list">
+                    <li><a href="#main">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><button class="btn-contato"><i class="fa fa-phone" aria-hidden="true"></i>Contato</button></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="banner">
+
+    </main>
+
+    <section id="sobre" class="secao-sobre">
+        <div class="texto-sobre">
+            <h2>LOREM IPSUM</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus lectus viverra, gravida est sed, egestas magna. Aliquam commodo nibh a ipsum finibus scelerisque. Donec ultrices quam nunc, lacinia ultricies lacus iaculis sed. Nulla et placerat risus. Mauris rutrum sodales sollicitudin. Pellentesque quis nunc porttitor, aliquet massa sed, euismod sapien. Praesent non purus varius, porta massa sit amet, interdum ligula. Pellentesque a magna sit amet leo laoreet ornare.</p>
+        </div>
+        <a href="https://storyset.com/web">
+            <img src="assets/Pair-programming-static.svg" alt="Web illustrations by Storyset">
+        </a>
+    </section>
+
+    <section id="servicos" class="secao-servicos">
+        <img class="componentes-servicos" src="assets/Components2.svg" alt="Assets Notebook e Celular">
+            <div class="texto-servicos">
+                <h2>Serviços</h2>
+                <ul class="lista-servicos">
+                    <h4>Desenvolvimento de Site Insitucional</h4>
+                    <li>Site responsivo, otimizado para computadores e dispositivos móveis</li>
+                    <li>Layout planejado e moderno, adaptável à proposta e identidade visual das empresas</li>
+                    <li>Tecnologias modernas e otimizadas</li>
+                    <li>Desenvolvimento limpo, utilizando de boas práticas de clean code e organização</li>
+                </ul>
+
+                <ul class="lista-servicos">
+                    <h4>Gestão de Tráfego</h4>
+                    <li>Site responsivo, otimizado para computadores e dispositivos móveis</li>
+                    <li>Layout planejado e moderno, adaptável à proposta e identidade visual das empresas</li>
+                    <li>Tecnologias modernas e otimizadas</li>
+                    <li>Desenvolvimento limpo, utilizando de boas práticas de clean code e organização</li>
+                </ul>
+
+                <ul class="lista-servicos">
+                    <h4>Design Gráfico</h4>
+                    <li>Criação de Logotipos;</li>
+                    <li>Planejamento de paleta de cores;</li>
+                    <li>Desenvolvimento de Guia de Estilo;</li>
+                    <li>Criação de artes gerais conforme padrão da marca</li>
+                </ul>
+            </div>
+    </section>
+
+    <section class="formulario">
+        <form class="formulario-contato" action="envio.php" method="post">
+        <h2>Entre em Contato</h2>
+        <h4>Preencha o formulário para entrar em contato conosco</h4>
+            <!-- Campo de Nome -->
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <!-- Campo de E-mail -->
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Campo de Mensagem -->
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+
+            <!-- Botão de Enviar -->
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
