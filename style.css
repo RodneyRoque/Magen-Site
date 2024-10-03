@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --LaranjaForte: #FC840D;
+    --LaranjaClaro: #FC8F23;
+    --BegeMagen: #F5E9DA;
+    --BrancoMagen: #fff;
+    --PretoMagen: #1D1D1D;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -191,7 +199,11 @@
     padding-block: 100px;
     color: #1D1D1D;
     text-align: center;
-    background-color: #f5e9da;
+    background-color: #FC840D;
+}
+
+.formulario img{
+    width: 10%;
 }
 
 .formulario h4{
@@ -200,41 +212,59 @@
 }
 
 .formulario-contato{
-    background-color: #FC8F23;
-    width: 60%;
+    background-color: var(--BegeMagen);
+    width: 40rem;
     height: auto;
     border-radius: 25px;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .form-group label{
     text-align: left;
+    padding-bottom: 10px;
 }
 
 .form-group{
-    margin: 0 auto;
-    padding: 10px;
+    margin: 2% auto;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     justify-content: center;
 }
 
 .form-group input, textarea{
     padding: 5px;
+    background:none;
     outline: 0;
     resize: none;
+    border: none;
+    border-bottom: 1px solid var(--LaranjaForte);
+}
+
+.form-group textarea{
+    background-color: #fff;
+    border: none;
+}
+
+.formulario i, span{
+    font-size: 17px;
+    padding: 5px;
 }
 
 .form-group button{
     border: 0;
     border-radius: 10px;
+    background-color: var(--LaranjaClaro);
     width: 50%;
     height: 40px;
     margin: 20px auto;
     cursor: pointer;
     font-size: 17px;
+    transition: 0.3s;
+    color: var(--BrancoMagen);
 }
 
 .form-group button:hover{
-    background-color: #f5e9da;
+    background-color: var(--LaranjaForte);
 }

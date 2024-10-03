@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magen - Marketing Especializado</title>
-    <link rel="shortcut icon" type="imagex/png" href="img/Logo-Principal-Laranja.png">
+    <link rel="shortcut icon" type="imagex/png" href="img/magen-icone.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="responsive.css" type="text/css"> 
     <script defer src="script.js"></script>
@@ -68,20 +68,35 @@
             </div>
     </section>
 
+    <section style="padding: 90px; font-size: 20px;" class="secao-sobre">
+        <h2>TEXTO</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus lectus viverra, gravida est sed, egestas magna. Aliquam commodo nibh a ipsum finibus scelerisque. Donec ultrices quam nunc, lacinia ultricies lacus iaculis sed. Nulla et placerat risus. Mauris rutrum sodales sollicitudin. Pellentesque quis nunc porttitor, aliquet massa sed, euismod sapien. Praesent non purus varius, porta massa sit amet, interdum ligula. Pellentesque a magna sit amet leo laoreet ornare.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus lectus viverra, gravida est sed, egestas magna. Aliquam commodo nibh a ipsum finibus scelerisque. Donec ultrices quam nunc, lacinia ultricies lacus iaculis sed. Nulla et placerat risus. Mauris rutrum sodales sollicitudin. Pellentesque quis nunc porttitor, aliquet massa sed, euismod sapien. Praesent non purus varius, porta massa sit amet, interdum ligula. Pellentesque a magna sit amet leo laoreet ornare.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus lectus viverra, gravida est sed, egestas magna. Aliquam commodo nibh a ipsum finibus scelerisque. Donec ultrices quam nunc, lacinia ultricies lacus iaculis sed. Nulla et placerat risus. Mauris rutrum sodales sollicitudin. Pellentesque quis nunc porttitor, aliquet massa sed, euismod sapien. Praesent non purus varius, porta massa sit amet, interdum ligula. Pellentesque a magna sit amet leo laoreet ornare.
+        </p>
+    </section>
+
     <section class="formulario">
         <form class="formulario-contato" action="envio.php" method="post">
+        <img src="img/magen-icone.png">
         <h2>Entre em Contato</h2>
         <h4>Preencha o formulário para entrar em contato conosco</h4>
             <!-- Campo de Nome -->
             <div class="form-group">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input placeholder="Nome Completo:" type="text" id="nome" name="nome" required>
             </div>
 
             <!-- Campo de E-mail -->
             <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input placeholder="E-mail:" type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <input placeholder="Telefone:" type="tel" id="tel">
             </div>
 
             <!-- Campo de Mensagem -->
@@ -89,6 +104,8 @@
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
             </div>
+
+            <i class="fa fa-envelope" aria-hidden="true"><span>contato@magen.com.br</span></i>
 
             <!-- Botão de Enviar -->
             <div class="form-group">
